@@ -6,11 +6,12 @@
 */
 
 html, body {
- margin: 0;
- padding: 0;
- font-family: 'Roboto', sans-serif;
- width:100%;
- background-color: #555; 
+	margin: 0;
+ 	padding: 0;
+ 	font-family: 'Roboto', sans-serif;
+ 	width:100%;
+ 	background-color: #555;
+ 	font-size: 14px; 
 }
 
 
@@ -23,15 +24,43 @@ h1,h2,h3,h4,h5,p{
 }
 
 .header img {
-  float: left;
-  background: #555;
-  padding-right: 10px;
+  	float: left;
+  	background: #555;
+  	padding-right: 10px;
 }
 
 .header h1 {
-  position: relative;
-  font-size: 50px;
-  font-family: 'Montserrat', sans-serif;
+  	position: relative;
+  	font-size: 3.5rem;
+  	font-family: 'Montserrat', sans-serif;
+}
+
+hr{
+	border-width: 1px;
+	border-color: #f23c3c;
+}
+
+
+
+img.vote{
+	float: left;
+  	cursor: pointer;
+  	padding-right: 5px;
+}
+
+p.sug_title{
+	font-size: 2rem;
+	color: #ffffff;
+}
+
+p.sug_upvote{
+	display: inline-block;
+	padding-right: 5px;
+	color: #ffffff;
+}
+
+p.sug_comment{
+	display: inline-block;
 }
 
 

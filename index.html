@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Suggestion Box</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<!--Bootstrap -->
@@ -18,11 +20,14 @@
       			<img src="img/suggetion_icon.png" alt="Suggetion Icon">
       			<h1>Suggestion Box</h1>
       		</div>
-        	<div ng-repeat="post in posts">
-	        	<p> {{ post.title }} </p>
-	        	<p> {{ post.upvotes }} </p>
-	        	<p> {{ post.comments }} </p>
+        	<div ng-repeat="post in posts | orderBy:'-upvotes'">
+        		<hr>
+	        	<p class="sug_title"> {{ post.title }} </p>
+	        	<img class="vote" src="img/downvote.png" alt="upvote and downvote logo">
+	        	<p class="sug_upvote"> Upvotes: {{ post.upvotes }}</p>
+	        	<p class="sug_comment"> | Comments {{ post.comments }} </p>
       		</div>
+      		<hr>
       		<form ng-submit="addSuggestion()" style="margin-top: 50px">
 				<h3> Submit Your Suggestion </h3>
 				<div class="form-group">
