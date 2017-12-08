@@ -40,26 +40,30 @@ hr{
 	border-color: #f23c3c;
 }
 
-
-
-img.vote{
-	float: left;
-  	cursor: pointer;
-  	padding-right: 5px;
+.glyphicon-plus-sign{
+	cursor: pointer;
+	color: #4af9bc;
+	padding-right: 2px;
 }
 
-p.sug_title{
+
+.glyphicon-plus-sign:hover{
+	color: #f23c3c;
+}
+
+p.title{
 	font-size: 2rem;
 	color: #ffffff;
 }
 
-p.sug_upvote{
+p.upvotes{
 	display: inline-block;
 	padding-right: 5px;
+	padding-left: 2px;
 	color: #ffffff;
 }
 
-p.sug_comment{
+p.comments{
 	display: inline-block;
 }
 
