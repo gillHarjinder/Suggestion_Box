@@ -15,12 +15,17 @@ html, body {
 }
 
 
-h1,h2,h3,h4,h5,p{
+h1,h2,h3,h4,h5,p,a{
 	color: #4af9bc;
 }
 
 .main{
-	padding: 20px; 0;
+	padding: 20px 0;
+}
+
+
+.container img{
+	margin-top: 20px;
 }
 
 .header img {
@@ -63,10 +68,19 @@ p.upvotes{
 	color: #ffffff;
 }
 
-p.comments{
+.comments a{
 	display: inline-block;
 }
 
+.box {
+  padding: 10px;
+  margin: 10px 20px;
 
+}
+
+.commentBox{
+	margin: 10px 20px 10px 0px;
+  	padding: 10px;
+}
 
 
